@@ -36,6 +36,9 @@ Installation
    source .profile                                                // Set environment variables on this shell
    env | grep -i agx                                              // Check that AGX_DIR and AGX_BINARY_DIR are sat correctly
 
+.. note::
+   It can happen that some AGX programs do not work when you add the execution command of setup_env.bash in .profile because LD_LIBRARY_PATH is not set appropriately.
+   In the case, please add the execution command in .bashrc.
 
 Running test
 ----------------------------
